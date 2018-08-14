@@ -12,6 +12,17 @@
 		918F606521227A890002213C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918F606321227A890002213C /* Main.storyboard */; };
 		918F606721227A8A0002213C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 918F606621227A8A0002213C /* Assets.xcassets */; };
 		918F606A21227A8A0002213C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 918F606821227A8A0002213C /* LaunchScreen.storyboard */; };
+		918F607221227F3C0002213C /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F607121227F3C0002213C /* OrderViewController.swift */; };
+		918F60772122887C0002213C /* NumberHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F60742122887C0002213C /* NumberHelper.swift */; };
+		918F60782122887C0002213C /* ColorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F60752122887C0002213C /* ColorHelper.swift */; };
+		918F60792122887C0002213C /* EnumHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F60762122887C0002213C /* EnumHelper.swift */; };
+		918F607F2122888F0002213C /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F607B2122888F0002213C /* Customer.swift */; };
+		918F60802122888F0002213C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F607C2122888F0002213C /* Ingredient.swift */; };
+		918F60812122888F0002213C /* Bowl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F607D2122888F0002213C /* Bowl.swift */; };
+		918F60822122888F0002213C /* IngredientData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F607E2122888F0002213C /* IngredientData.swift */; };
+		918F60842122903A0002213C /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F60832122903A0002213C /* SelectionTableViewCell.swift */; };
+		918F6086212299EC0002213C /* DetailSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F6085212299EC0002213C /* DetailSelectionTableViewCell.swift */; };
+		918F608821229AD70002213C /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F608721229AD70002213C /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +33,17 @@
 		918F606621227A8A0002213C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		918F606921227A8A0002213C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		918F606B21227A8A0002213C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		918F607121227F3C0002213C /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
+		918F60742122887C0002213C /* NumberHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberHelper.swift; sourceTree = "<group>"; };
+		918F60752122887C0002213C /* ColorHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorHelper.swift; sourceTree = "<group>"; };
+		918F60762122887C0002213C /* EnumHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnumHelper.swift; sourceTree = "<group>"; };
+		918F607B2122888F0002213C /* Customer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		918F607C2122888F0002213C /* Ingredient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		918F607D2122888F0002213C /* Bowl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bowl.swift; sourceTree = "<group>"; };
+		918F607E2122888F0002213C /* IngredientData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IngredientData.swift; sourceTree = "<group>"; };
+		918F60832122903A0002213C /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		918F6085212299EC0002213C /* DetailSelectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		918F608721229AD70002213C /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,57 @@
 		918F605E21227A890002213C /* NavigationChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				918F60892122A25C0002213C /* ViewController */,
+				918F60732122887C0002213C /* Helper */,
+				918F607A2122888F0002213C /* Model */,
+				918F608A2122A2880002213C /* TableViewCells */,
 				918F605F21227A890002213C /* AppDelegate.swift */,
-				918F606121227A890002213C /* ViewController.swift */,
 				918F606321227A890002213C /* Main.storyboard */,
 				918F606621227A8A0002213C /* Assets.xcassets */,
 				918F606821227A8A0002213C /* LaunchScreen.storyboard */,
 				918F606B21227A8A0002213C /* Info.plist */,
 			);
 			path = NavigationChallenge;
+			sourceTree = "<group>";
+		};
+		918F60732122887C0002213C /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				918F60742122887C0002213C /* NumberHelper.swift */,
+				918F60752122887C0002213C /* ColorHelper.swift */,
+				918F60762122887C0002213C /* EnumHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		918F607A2122888F0002213C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				918F607B2122888F0002213C /* Customer.swift */,
+				918F607C2122888F0002213C /* Ingredient.swift */,
+				918F607D2122888F0002213C /* Bowl.swift */,
+				918F607E2122888F0002213C /* IngredientData.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		918F60892122A25C0002213C /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				918F606121227A890002213C /* ViewController.swift */,
+				918F607121227F3C0002213C /* OrderViewController.swift */,
+				918F608721229AD70002213C /* DetailViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		918F608A2122A2880002213C /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				918F60832122903A0002213C /* SelectionTableViewCell.swift */,
+				918F6085212299EC0002213C /* DetailSelectionTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +200,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918F608821229AD70002213C /* DetailViewController.swift in Sources */,
 				918F606221227A890002213C /* ViewController.swift in Sources */,
+				918F607F2122888F0002213C /* Customer.swift in Sources */,
+				918F60782122887C0002213C /* ColorHelper.swift in Sources */,
+				918F60842122903A0002213C /* SelectionTableViewCell.swift in Sources */,
+				918F60792122887C0002213C /* EnumHelper.swift in Sources */,
+				918F6086212299EC0002213C /* DetailSelectionTableViewCell.swift in Sources */,
+				918F60802122888F0002213C /* Ingredient.swift in Sources */,
+				918F60812122888F0002213C /* Bowl.swift in Sources */,
+				918F60822122888F0002213C /* IngredientData.swift in Sources */,
 				918F606021227A890002213C /* AppDelegate.swift in Sources */,
+				918F60772122887C0002213C /* NumberHelper.swift in Sources */,
+				918F607221227F3C0002213C /* OrderViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
