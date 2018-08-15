@@ -31,8 +31,6 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
         bowlTableView.estimatedRowHeight = 75
         bowlTableView.rowHeight = UITableViewAutomaticDimension
         
-        
-        // Do any additional setup after loading the view.
         setupNavigationBar()
     }
     
@@ -48,8 +46,12 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Sukasuka", for: indexPath) as! SelectionTableViewCell
-        cell.titleLabel.text = dataBowl[indexPath.row].rawValue
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Sukasuka", for: indexPath)
+            
+        if let cell = cell as? SelectionTableViewCell {
+            cell.titleLabel.text = dataBowl[indexPath.row].rawValue
+        }
+        
         return cell
     }
     
@@ -64,21 +66,8 @@ class OrderViewController: UIViewController, UITableViewDelegate, UITableViewDat
     // MARKS: NAVIGATION
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? DetailViewController {
-            let ingredientData = IngredientData.init()
-            
             if let selectedType = selectedType {
-                switch selectedType {
-                case .base:
-                    destination.options = ingredientData.bases
-                case .dressing:
-                    destination.options = ingredientData.dressings
-                case .protein:
-                    destination.options = ingredientData.proteins
-                case .supplement:
-                    destination.options = ingredientData.supplemets
-                case .topping:
-                    destination.options = ingredientData.toppings
-                }
+                destination.ingredientType = selectedType
             }
         }
     }
